@@ -7,7 +7,7 @@ namespace CW9_1_V2.DAL
         public static List<Product> Products { get; set; }
         static ProductRepository()
         {
-            Products = new List<Product> { new Product() {Id = 1, Name="Shirt", Color="Blue" } };
+            Products = new List<Product> { new Product() {Id = 1, Name="Shirt", Color= "#30ff30" } };
         }
     }
 }
