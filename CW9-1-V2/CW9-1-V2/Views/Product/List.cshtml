@@ -1,0 +1,41 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "List of product";
+}
+
+<div class="container">
+    <div>
+        <a class="btn btn-primary" asp-controller="Product" asp-action="Create">Add Product</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td>
+
+                        @p.Id
+
+                    </td>
+                    <td>
+
+                        @p.Name
+
+                    </td>
+                    <td>
+
+                        @p.Color
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
